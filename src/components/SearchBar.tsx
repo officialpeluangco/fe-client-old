@@ -17,7 +17,7 @@ const SearchBar = () => {
                 <span className="font-semibold">Harga</span>
                 <span>Sesuaikan</span>
             </div>
-            <div className="flex justify-center items-center h-full w-[42px] bg-white rounded-full ml-auto cursor-pointer hover:bg-[#a5408c] hover:text-white transition-all">
+            <div className="flex justify-center items-center h-full w-[42px] bg-white rounded-full ml-auto cursor-pointer hover:bg-[#a5408c] hover:text-white border-[3px] border-transparent hover:border-white hover:shadow-lg transition-all">
                 <Search />
             </div>
         </div>
