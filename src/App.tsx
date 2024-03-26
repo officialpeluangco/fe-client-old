@@ -1,11 +1,17 @@
+import { RouterProvider, createBrowserRouter } from "react-router-dom"
+import HomePage from "./views/HomePage"
+
 function App() {
 
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <HomePage />,
+    },
+  ])
+
   return (
-    <>
-      <div className='text-6xl'>
-        Hello React
-      </div>
-    </>
+    <RouterProvider router={router} />
   )
 }
 
