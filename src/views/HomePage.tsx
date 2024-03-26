@@ -2,7 +2,7 @@ import HeroSection from "../components/HeroSection"
 
 const HomePage = () => {
   return (
-    <main>
+    <main className="w-full h-screen">
         <HeroSection />
     </main>
   )
