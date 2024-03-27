@@ -2,44 +2,48 @@ import BannerSection from "../components/BannerSection"
 import HeroSection from "../components/HeroSection"
 import PartnerCardList from "../components/PartnerCardList"
 
+import logo1 from "../assets/images/logo1 1.png"
+import logo2 from "../assets/images/logo2 1.png"
+import logo3 from "../assets/images/logo3 1.png"
+
 const dummyData = [
   {
-    imgUrl: "/src/assets/images/logo1 1.png",
+    imgUrl: logo1,
     title: "Balkan Shawarma",
     category: "Self-manage dan Autopilot",
     BEP: 4,
     price: "259.000.000"
   },
   {
-    imgUrl: "/src/assets/images/logo2 1.png",
+    imgUrl: logo2,
     title: "Kebuli Abuya",
     category: "Self-manage",
     BEP: 12,
     price: "90.000.000"
   },
   {
-    imgUrl: "/src/assets/images/logo3 1.png",
+    imgUrl: logo3,
     title: "Tohang's Barber",
     category: "Autopilot",
     BEP: 12,
     price: "250.000.000"
   },
   {
-    imgUrl: "/src/assets/images/logo1 1.png",
+    imgUrl: logo1,
     title: "Balkan Shawarma",
     category: "Self-manage dan Autopilot",
     BEP: 4,
     price: "259.000.000"
   },
   {
-    imgUrl: "/src/assets/images/logo2 1.png",
+    imgUrl: logo2,
     title: "Kebuli Abuya",
     category: "Self-manage",
     BEP: 12,
     price: "90.000.000"
   },
   {
-    imgUrl: "/src/assets/images/logo3 1.png",
+    imgUrl: logo3,
     title: "Tohang's Barber",
     category: "Autopilot",
     BEP: 12,
