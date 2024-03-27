@@ -5,6 +5,7 @@ import PartnerCardList from "../components/PartnerCardList"
 import logo1 from "../assets/images/logo1 1.png"
 import logo2 from "../assets/images/logo2 1.png"
 import logo3 from "../assets/images/logo3 1.png"
+import SimpleArticle from "../components/SimpleArticle"
 
 const dummyData = [
   {
@@ -58,6 +59,7 @@ const HomePage = () => {
         <BannerSection />
         <PartnerCardList data={dummyData} title="Mitra Ekslusif" subTitle="Mitra pilihan untuk masa depan kesuksesan anda." />
         <BannerSection />
+        <SimpleArticle />
     </main>
   )
 }
