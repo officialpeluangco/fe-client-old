@@ -1,6 +1,7 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom"
 import HomePage from "./views/HomePage"
 import Header from "./components/Header"
+import Footer from "./components/Footer"
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
     <>
       <Header white />
       <RouterProvider router={router} />
+      <Footer />
     </>
   )
 }

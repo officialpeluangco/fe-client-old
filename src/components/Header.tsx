@@ -19,7 +19,7 @@ const Header: React.FC<HeaderProps> = ({ white }) => {
                 <li className='font-inter cursor-pointer hover:border-white border-2 border-transparent transition-all py-[5px] px-6 rounded-lg'>
                     Masuk
                 </li>
-                <li className='font-inter cursor-pointer border-2 border-transparent hover:bg-[#a5408c] bg-[#771444] py-[5px] px-6 rounded-lg transition-all'>
+                <li className='font-inter cursor-pointer border-2 border-transparent hover:bg-[#a5408c] bg-[#771444] py-[5px] px-6 rounded-lg transition-all ml-4'>
                     Daftar
                 </li>
             </nav>

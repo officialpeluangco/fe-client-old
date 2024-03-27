@@ -13,7 +13,7 @@ const PartnerCardList: React.FC<PartnerCardListProps> = ({
     data,
     title = '',
     subTitle = '',
-    isWrap = true
+    isWrap = false
 }) => {
     return (
         <section className='mx-auto w-full flex flex-col h-fit my-5 max-w-[1320px] gap-2'>
