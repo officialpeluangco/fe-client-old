@@ -1,6 +1,6 @@
 import React from 'react'
 import logo1 from '../assets/images/Logo Putih 2024 - Draft 1.png'
-import logo2 from '../assets/images/Logo pink 2024 - Draft 1.png'
+import logo2 from '../assets/images/Logo 2024 - Berwarna.png'
 import { useScrollPosition } from '@/hooks/useScrollPosition'
 
 interface HeaderProps {
