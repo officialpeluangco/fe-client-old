@@ -6,7 +6,7 @@ const SearchBar = () => {
             <input
                 type="text"
                 placeholder="Kebuli Abuya"
-                className="bg-white max-w-[300px] w-full h-full rounded-full placeholder:text-sm focus:outline-none px-3">
+                className="bg-white max-w-[300px] w-full h-full rounded-full text-sm text-gray-600 placeholder:text-sm focus:outline-none px-3">
 
             </input>
             <div className="hover:bg-slate-100 cursor-pointer w-full max-w-[150px] flex flex-col border-l border-gray-400 px-2 text-[13px] justify-center transition-all">
