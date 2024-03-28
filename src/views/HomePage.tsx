@@ -7,7 +7,7 @@ import logo2 from "../assets/images/logo2 1.png"
 import logo3 from "../assets/images/logo3 1.png"
 import SimpleArticle from "../components/SimpleArticle"
 
-const dummyData = [
+export const dummyData = [
   {
     imgUrl: logo1,
     title: "Balkan Shawarma",

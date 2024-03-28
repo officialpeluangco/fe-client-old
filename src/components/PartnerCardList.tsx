@@ -26,7 +26,7 @@ const PartnerCardList: React.FC<PartnerCardListProps> = ({
                 </div>
             )}
 
-            <div className={`w-full flex ${isWrap ? 'flex-wrap' : 'flex-row'} justify-center items-center pb-4 gap-6`}>
+            <div className={`w-full flex ${isWrap ? 'flex-wrap' : 'flex-row'} justify-center items-center pt-2 pb-4 gap-6`}>
                 {data.map((item, index) => (
                     <PartnerCard
                         key={index}
@@ -38,6 +38,13 @@ const PartnerCardList: React.FC<PartnerCardListProps> = ({
                     />
                 ))}
             </div>
+            {isWrap && (
+                <div className='flex justify-center'>
+                    <button className='text-white font-inter cursor-pointer border-2 border-transparent hover:bg-[#a5408c] bg-[#771444] py-[5px] px-6 rounded-lg transition-all ml-4'>
+                        Lihat lebih banyak
+                    </button>
+                </div>
+            )}
         </section>
     )
 }
