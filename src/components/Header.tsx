@@ -1,13 +1,10 @@
-import React from 'react'
 import logo1 from '../assets/images/Logo Putih 2024 - Draft 1.png'
 import logo2 from '../assets/images/Logo 2024 - Berwarna.png'
 import { useScrollPosition } from '@/hooks/useScrollPosition'
 
-interface HeaderProps {
-    white?: boolean
-}
-
-const Header: React.FC<HeaderProps> = ({ white }) => {
+const Header = () => {
+    const path = window.location.pathname
+    const white = path==='/'
     const scrollPosition = useScrollPosition()
 
     return (
