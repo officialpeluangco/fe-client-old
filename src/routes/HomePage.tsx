@@ -6,6 +6,7 @@ import logo1 from "../assets/images/logo1 1.png"
 import logo2 from "../assets/images/logo2 1.png"
 import logo3 from "../assets/images/logo3 1.png"
 import SimpleArticle from "../components/SimpleArticle"
+import Header from "@/components/Header"
 
 export const dummyData = [
   {
@@ -55,11 +56,12 @@ export const dummyData = [
 const HomePage = () => {
   return (
     <main className="w-full h-fit">
-        <HeroSection />
-        <BannerSection />
-        <PartnerCardList data={dummyData} title="Mitra Ekslusif" subTitle="Mitra pilihan untuk masa depan kesuksesan anda." />
-        <BannerSection />
-        <SimpleArticle />
+      <Header white />
+      <HeroSection />
+      <BannerSection />
+      <PartnerCardList data={dummyData} title="Mitra Ekslusif" subTitle="Mitra pilihan untuk masa depan kesuksesan anda." />
+      <BannerSection />
+      <SimpleArticle />
     </main>
   )
 }
