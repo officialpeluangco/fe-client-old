@@ -1,12 +1,13 @@
 import React from 'react'
 import PartnerCard from './PartnerCard'
+import { PartnerCardProps } from '@/types/partner'
 
 interface PartnerCardListProps {
     title?: string
     subTitle?: string
     isWrap?: boolean
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    data: Record<string, any>[]
+    data: PartnerCardProps[]
 }
 
 const PartnerCardList: React.FC<PartnerCardListProps> = ({
@@ -30,12 +31,8 @@ const PartnerCardList: React.FC<PartnerCardListProps> = ({
                 {data.map((item, index) => (
                     <PartnerCard
                         key={index}
-                        imgUrl={item.imgUrl}
-                        title={item.title}
-                        category={item.category}
-                        BEP={item.BEP}
-                        price={item.price}
-                    />
+                        data={item}              
+                        />
                 ))}
             </div>
             {isWrap && (
