@@ -4,12 +4,13 @@ import HomePage from "./routes/HomePage"
 import { PartnerCardProps, dummyData } from "./types/partner"
 import MerchantPage from "./routes/MerchantPage"
 import MerchantDetail from "./components/MerchantDetail"
+import ErrorPage from "./components/ErrorPage"
 
 const router = createBrowserRouter(
     createRoutesFromElements(
         <>
             <Route path="/" element={<HomePage />} />
-            <Route path="/merchant" element={<MerchantPage />} >
+            <Route path="/merchant" element={<MerchantPage />} errorElement={<ErrorPage/>} >
                 <Route
                     path=":id"
                     loader={({ params }): PartnerCardProps => {
@@ -17,6 +18,7 @@ const router = createBrowserRouter(
                         return data[0]
                     }}
                     element={<MerchantDetail />}
+
                 />
             </Route>
         </>
