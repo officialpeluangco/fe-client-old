@@ -1,24 +1,37 @@
-import { RouterProvider, createBrowserRouter } from "react-router-dom"
-import HomePage from "./views/HomePage"
-import Header from "./components/Header"
+import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from "react-router-dom"
 import Footer from "./components/Footer"
+import HomePage from "./routes/HomePage"
+import { PartnerCardProps, dummyData } from "./types/partner"
+import MerchantPage from "./routes/MerchantPage"
+import MerchantDetail from "./components/MerchantDetail"
+import ErrorPage from "./components/ErrorPage"
+
+const router = createBrowserRouter(
+    createRoutesFromElements(
+        <>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/merchant" element={<MerchantPage />} errorElement={<ErrorPage/>} >
+                <Route
+                    path=":id"
+                    loader={({ params }): PartnerCardProps => {
+                        const data = dummyData.filter((data) => data.id === Number(params.id))
+                        return data[0]
+                    }}
+                    element={<MerchantDetail />}
+
+                />
+            </Route>
+        </>
+    )
+)
 
 function App() {
 
-  const router = createBrowserRouter([
-    {
-      path: "/",
-      element: <HomePage />,
-    },
-  ])
-
-  return (
-    <>
-      <Header white />
-      <RouterProvider router={router} />
-      <Footer />
-    </>
-  )
+    return (
+        <>
+            <RouterProvider router={router} />
+            <Footer />
+        </>
+    )
 }
-
 export default App
