@@ -1,6 +1,6 @@
 import { PartnerCardProps } from "@/types/partner"
 import React from "react"
-import { Link } from "react-router-dom"
+// import { Link } from "react-router-dom"
 
 interface props {
     data: PartnerCardProps
@@ -10,7 +10,7 @@ const PartnerCard: React.FC<props> = ({
     data
 }) => {
     return (
-        <Link to={`/merchant/${data.id}`}>
+        // <Link to={`/merchant/${data.id}`}>
             <div className='flex flex-col p-[13px] h-fit w-[200px] gap-2 cursor-pointer bg-slate-200 rounded-lg transition-all delay-100 shadow-lg group'>
                 <div className="w-fit h-fit overflow-hidden rounded-lg">
                     <img
@@ -36,7 +36,7 @@ const PartnerCard: React.FC<props> = ({
                     </span>
                 </div>
             </div>
-        </Link>
+        // </Link>
 
     )
 }
