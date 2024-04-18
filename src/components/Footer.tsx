@@ -13,11 +13,11 @@ import logo2 from '../assets/images/Logo pink 2024 - Draft 1.png'
 
 const Footer = () => {
     return (
-        <footer className='w-full h-[510px] my-6'>
+        <footer className='w-full h-[510px] my-6 md:px-0 px-4'>
             <div className='w-full h-full mx-auto max-w-[1320px] '>
                 <Separator className='my-[70px] h-[1px]' />
-                <div className='w-full h-fit flex flex-row'>
-                    <div className='h-full w-1/4 bg-white flex flex-col gap-[20px]'>
+                <div className='w-full h-fit flex md:flex-row flex-col md:gap-0 gap-8'>
+                    <div className='h-full md:w-1/4 bg-white flex flex-col gap-[20px]'>
                         <h2 className='font-semibold text-gray-500'>
                             Layanan Kami
                         </h2>
@@ -34,7 +34,7 @@ const Footer = () => {
                             Blog
                         </div>
                     </div>
-                    <div className='h-full w-1/4 bg-white flex flex-col gap-[20px]'>
+                    <div className='h-full md:w-1/4 bg-white flex flex-col gap-[20px]'>
                         <h2 className='font-semibold text-gray-500'>
                             Hubungi Kami
                         </h2>
@@ -48,7 +48,7 @@ const Footer = () => {
                             +62 851-7999-8975
                         </div>
                     </div>
-                    <div className='h-full w-1/4 bg-white flex flex-col gap-[20px]'>
+                    <div className='h-full md:w-1/4 bg-white flex flex-col gap-[20px]'>
                         <h2 className='font-semibold text-gray-500'>
                             Kolaborasi
                         </h2>
@@ -58,7 +58,7 @@ const Footer = () => {
                             <img src={icon3} alt="" />
                         </div>
                     </div>
-                    <div className='h-full w-1/4 bg-white flex flex-col gap-[20px]'>
+                    <div className='h-full md:w-1/4 bg-white flex flex-col gap-[20px]'>
                         <h2 className='font-semibold text-gray-500'>
                             Layanan Kami
                         </h2>
@@ -69,7 +69,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <Separator className='my-[40px] h-[1px]' />
-                <div className='w-full h-fit flex flex-row justify-between'>
+                <div className='w-full h-fit flex md:flex-row flex-col md:justify-between md:gap-0 gap-4 items-center'>
                     <div className='h-full w-fit flex flex-row gap-[50px]'>
                         <a
                             className='text-gray-400 cursor-pointer hover:text-gray-400/50 w-fit text-sm font-extralight'
@@ -82,14 +82,14 @@ const Footer = () => {
                             Kebijakan Privasi
                         </a>
                     </div>
-                    <div className='flex flex-row justify-end gap-[30px]'>
+                    <div className='flex flex-row md:justify-end justify-center gap-[30px]'>
                         <img className='w-[30px] h-[30px] cursor-pointer hover:-translate-y-1 transition-all' src={icon5} alt="" />
                         <img className='w-[30px] h-[30px] cursor-pointer hover:-translate-y-1 transition-all' src={icon6} alt="" />
                         <img className='w-[30px] h-[30px] cursor-pointer hover:-translate-y-1 transition-all' src={icon7} alt="" />
                     </div>
                 </div>
                 <Separator className='my-[40px] h-[1px]' />
-                <div className='w-full h-fit flex flex-row gap-[40px]'>
+                <div className='w-full h-fit flex md:flex-row flex-col items-center md:gap-[40px] gap-4 md:pb-0 pb-[40px] '>
                     <img className='w-[100px] h-[22px] my-auto' src={logo2} alt="" />
                     <p className='text-gray-400 w-fit text-[13.5px] font-extralight'>
                         Peluang.co adalah Platform Ekosistem untuk bisnis kemitraan dan waralaba di Indonesia. Peluang.co dioperasikan oleh PT Peluang Bersama Kita. Dukung kami untuk membantu

@@ -1,6 +1,7 @@
 import React from 'react'
 import PartnerCard from './PartnerCard'
 import { PartnerCardProps } from '@/types/partner'
+import { Carousel, CarouselContent, CarouselItem } from './ui/carousel'
 
 interface PartnerCardListProps {
     title?: string
@@ -17,7 +18,7 @@ const PartnerCardList: React.FC<PartnerCardListProps> = ({
     isWrap = false
 }) => {
     return (
-        <section className='mx-auto w-full flex flex-col h-fit my-5 max-w-[1320px] gap-2'>
+        <section className='mx-auto w-full flex flex-col h-fit my-5 max-w-[1320px] gap-2 md:px-0 px-4'>
             <div className='text-3xl font-inter font-bold'>
                 {title}
             </div>
@@ -28,12 +29,24 @@ const PartnerCardList: React.FC<PartnerCardListProps> = ({
             )}
 
             <div className={`w-full flex ${isWrap ? 'flex-wrap' : 'flex-row'} justify-center items-center pt-2 pb-4 gap-6`}>
-                {data.map((item, index) => (
-                    <PartnerCard
-                        key={index}
-                        data={item}              
-                        />
-                ))}
+                <Carousel opts={
+                    {
+                        loop: true,
+                        slidesToScroll: 2
+                    }
+                } className='w-full max-w-[1320px]'>
+                    <CarouselContent className=''>
+                        {data.map((item, index) => (
+                            <CarouselItem key={index} className='md:basis-1/4 basis-1/2 lg:basis-1/6'>
+                                <PartnerCard
+                                    key={index}
+                                    data={item}
+                                />
+                            </CarouselItem>
+                        ))}
+                    </CarouselContent>
+                </Carousel>
+
             </div>
             {isWrap && (
                 <div className='flex justify-center'>

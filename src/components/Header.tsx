@@ -32,7 +32,7 @@ const Header: React.FC<HeaderProps> = ({ white }) => {
                         <img className="md:w-[139.86px] w-[100px] cursor-pointer" src={logo1} />}
             </Link>
 
-            <ul className={`absolute md:static top-[60px] py-4 md:py-0 md:bg-transparent bg-white w-full md:flex-row flex-col items-center gap-2 justify-end list-none text-sm transition-all ${isOpen ? `hidden` : `flex`} ${white && scrollPosition == 0 ? 'md:text-white' : 'md:text-black'}`}>
+            <ul className={`absolute md:static top-[60px] md:py-0 md:bg-transparent bg-white w-full overflow-hidden md:flex-row flex-col items-center gap-2 justify-end list-none text-sm transition-all flex ${isOpen ? `h-[180px] py-4` : `h-0 md:h-full`} ${white && scrollPosition == 0 ? 'md:text-white' : 'md:text-black'}`}>
                 <li className={`font-inter cursor-pointer hover:border-black ${scrollPosition > 0 || white === false ? 'md:hover:border-black' : 'md:hover:border-white'}  border-2 border-transparent transition-all py-[5px] px-6 rounded-lg`}>
                     Jadi Mitra Peluang.co
                 </li>
@@ -49,7 +49,7 @@ const Header: React.FC<HeaderProps> = ({ white }) => {
                 </li>
             </ul>
             <button onClick={toggleMenu} className={`mr-4 md:hidden ${scrollPosition > 0 || white === false ? 'text-black' : 'text-white'}`}>
-                {isOpen ? <Menu /> : <X />}
+                {isOpen ? <X /> : <Menu />}
             </button>
         </header>
     )

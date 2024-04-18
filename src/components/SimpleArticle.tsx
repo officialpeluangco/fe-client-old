@@ -2,8 +2,8 @@ import article1 from '../assets/images/article1.png'
 
 const SimpleArticle = () => {
     return (
-        <section className='w-full h-[350px] my-4'>
-            <div className='flex flex-row justify-center gap-[200px] w-full max-w-[1320px] mx-auto h-full'>
+        <section className='w-full md:h-[350px] my-4 md:px-0 px-4'>
+            <div className='flex md:flex-row flex-col justify-center md:gap-[200px] gap-4 w-full max-w-[1320px] mx-auto h-full'>
                 <div className='w-[350px] h-full object-cover'>
                     <img
                         className='w-full h-full'
