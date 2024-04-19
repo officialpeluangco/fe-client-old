@@ -18,7 +18,6 @@ const router = createBrowserRouter(
                         return data[0]
                     }}
                     element={<MerchantDetail />}
-
                 />
             </Route>
         </>
