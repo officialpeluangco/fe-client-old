@@ -24,8 +24,8 @@ const MerchantDetail = () => {
 
 
     return (
-        <section className='w-full h-[660px] py-[30px] flex flex-row items-center justify-start gap-[60px] max-w-[1320px] mx-auto'>
-            <div className="h-[600px] w-[500px] flex flex-col justify-center">
+        <section className='w-full md:h-[660px] h-full py-[30px] flex md:flex-row flex-col items-center justify-start gap-[60px] max-w-[1320px] mx-auto md:px-0 px-4'>
+            <div className="md:h-[600px] md:w-[500px] h-full w-full flex flex-col justify-center">
                 <Swiper
 
                     modules={[Navigation, Thumbs]}
@@ -87,7 +87,7 @@ const MerchantDetail = () => {
                 </Swiper>
             </div>
 
-            <div className="w-full h-full flex flex-col justify-between">
+            <div className="w-full h-full flex flex-col justify-between gap-4 md:gap-0">
                 <div className="w-full h-fit flex flex-row gap-4">
                     <div className="w-fit h-fit shadow-[0_0_10px_4px_rgba(0,0,0,0.1)] rounded-full object-cover">
                         <img className="rounded-full" src={load.imgUrl} width={75} height={75} alt="" />
@@ -102,12 +102,12 @@ const MerchantDetail = () => {
                     </div>
                 </div>
 
-                <div className="flex flex-col w-full h-full justify-evenly">
+                <div className="flex flex-col w-full h-full justify-evenly gap-8">
                     <div className="flex flex-col gap-2">
                         <h2 className="text-xl font-semibold">
                             Tentang
                         </h2>
-                        <p>
+                        <p className="text-sm text-gray-500">
                             {load.desc}
                         </p>
                     </div>
@@ -128,26 +128,26 @@ const MerchantDetail = () => {
                         </h2>
                         <div className="flex flex-row">
                             <div className="h-full w-1/3">
-                                <h3 className="font-semibold">
+                                <h3 className="font-semibold text-sm">
                                     6 Cabang
                                 </h3>
-                                <div>
+                                <div className="text-sm text-gray-500">
                                     Seluruh Indonesia
                                 </div>
                             </div>
                             <div className="h-full w-1/3">
-                                <h3 className="font-semibold">
+                                <h3 className="font-semibold text-sm">
                                     Biaya Marketing
                                 </h3>
-                                <div>
+                                <div className="text-sm text-gray-500">
                                     Tidak Ada
                                 </div>
                             </div>
                             <div className="h-full w-1/3">
-                                <h3 className="font-semibold">
+                                <h3 className="font-semibold text-sm">
                                     BEP
                                 </h3>
-                                <div>
+                                <div className="text-sm text-gray-500">
                                     {load.BEP} Bulan
                                 </div>
                             </div>
@@ -155,18 +155,18 @@ const MerchantDetail = () => {
                     </div>
                 </div>
 
-                <div className="flex flex-row items-center justify-between w-full p-6 text-white h-[150px] bg-gradient-to-r from-indigo-900 via-slate-400 to-neutral-100 rounded-lg">
+                <div className="flex flex-row items-center justify-between w-full p-6 text-white md:h-[150px] h-fit bg-gradient-to-r from-indigo-900 via-slate-400 to-neutral-100 rounded-lg">
                     <div className="flex flex-col gap-1 max-w-[480px]">
-                        <h2 className="text-lg font-semibold">
+                        <h2 className="md:text-lg font-semibold text-base">
                             Sudah punya akun belum ?
                         </h2>
-                        <p className="text-sm">
+                        <p className="text-sm text-slate-100">
                             Buat akun atau log in yuk. Ada diskon dan benefit biar kamu makin cuan
                             buka usaha lewat Peluang!
                         </p>
                     </div>
                     <div>
-                        <button className='text-white font-inter cursor-pointer border-2 border-transparent hover:bg-[#a5408c] bg-[#771444] py-[5px] px-6 rounded-lg transition-all ml-4'>
+                        <button className='text-white text-sm md:text-base font-inter cursor-pointer border-2 border-transparent hover:bg-[#a5408c] bg-[#771444] md:py-[5px] md:px-6 py-[8px] px-4 rounded-lg transition-all ml-4'>
                             Daftar
                         </button>
                     </div>
