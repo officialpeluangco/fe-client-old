@@ -1,4 +1,4 @@
-import logo1 from '../assets/images/Logo Putih 2024 - Draft 1.png'
+import logo1 from '../assets/images/Logo Putih 2024 - Draft.png'
 import logo2 from '../assets/images/Logo 2024 - Berwarna.png'
 import { useScrollPosition } from '@/hooks/useScrollPosition'
 import { Link } from 'react-router-dom'
@@ -24,12 +24,12 @@ const Header: React.FC<HeaderProps> = ({ white }) => {
                 ${scrollPosition > 0 ? `md:text-black bg-white shadow-md` : `md:text-white bg-transparent shadow-none`}`
             }>
             <Link to='/' className='pl-4 md:pl-0' >
-                {white === false ? <img className="md:w-[139.86px] w-[100px] cursor-pointer" src={logo2} />
+                {white === false ? <img className="md:w-[139.86px] w-[100px] cursor-pointer" src={logo2} width={100} height={50} />
                     : scrollPosition > 0
                         ?
-                        <img className="md:w-[139.86px] w-[100px] cursor-pointer" src={logo2} />
+                        <img className="md:w-[139.86px] w-[100px] cursor-pointer" src={logo2} width={100} height={50} />
                         :
-                        <img className="md:w-[139.86px] w-[100px] cursor-pointer" src={logo1} />}
+                        <img className="md:w-[139.86px] w-[100px] cursor-pointer" src={logo1} width={100} height={50} />}
             </Link>
 
             <ul className={`absolute md:static top-[60px] md:py-0 md:bg-transparent bg-white w-full overflow-hidden md:flex-row flex-col items-center gap-2 justify-end list-none text-sm transition-all flex ${isOpen ? `h-[180px] py-4` : `h-0 md:h-full`} ${white && scrollPosition == 0 ? 'md:text-white' : 'md:text-black'}`}>
