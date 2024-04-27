@@ -20,12 +20,10 @@ const MerchantDetail = () => {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const [activeThumb, setActiveThumb] = useState<any>(null);
     const load: PartnerCardProps = useLoaderData() as PartnerCardProps;
-    console.log(load);
-
 
     return (
         <section className='w-full md:h-[660px] h-full py-[30px] flex md:flex-row flex-col items-center justify-start gap-[60px] max-w-[1320px] mx-auto md:px-0 px-4'>
-            <div className="md:h-[600px] md:w-[500px] h-full w-full flex flex-col justify-center">
+            <div className="md:w-1/2 h-full w-full flex flex-col justify-center">
                 <Swiper
 
                     modules={[Navigation, Thumbs]}
@@ -87,7 +85,7 @@ const MerchantDetail = () => {
                 </Swiper>
             </div>
 
-            <div className="w-full h-full flex flex-col justify-between gap-4 md:gap-0">
+            <div className="md:w-1/2 w-full h-full flex flex-col justify-between gap-4 md:gap-0">
                 <div className="w-full h-fit flex flex-row gap-4">
                     <div className="w-fit h-fit shadow-[0_0_10px_4px_rgba(0,0,0,0.1)] rounded-full object-cover">
                         <img className="rounded-full" src={load.imgUrl} width={75} height={75} alt="" />
