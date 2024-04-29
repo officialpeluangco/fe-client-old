@@ -4,20 +4,17 @@ import PartnerCardList from "../components/PartnerCardList"
 import SimpleArticle from "../components/SimpleArticle"
 import Header from "@/components/Header"
 import Footer from "@/components/Footer"
-import { useSelector } from "react-redux"
-import { RootState } from "@/lib/store"
+import { dummyData } from "@/types/partner"
 
 
 const HomePage = () => {
-  const merchants = useSelector((state:RootState) => state.merchant.merchants)
-  console.log(merchants)
   return (
     <>
       <main className="w-full h-fit">
         <Header white />
         <HeroSection />
         <BannerSection />
-        <PartnerCardList data={merchants} title="Mitra Ekslusif" subTitle="Mitra pilihan untuk masa depan kesuksesan anda." />
+        <PartnerCardList data={dummyData} title="Mitra Ekslusif" subTitle="Mitra pilihan untuk masa depan kesuksesan anda." />
         <BannerSection />
         <SimpleArticle />
       </main>

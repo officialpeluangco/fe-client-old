@@ -6,6 +6,7 @@ import { Outlet, useParams } from "react-router-dom"
 import Footer from "@/components/Footer"
 import { useSelector } from "react-redux"
 import { RootState } from "@/lib/store"
+import { dummyData } from "@/types/partner"
 
 const filterProps: SearchFilterProps[] = [
     {
@@ -50,7 +51,7 @@ const MerchantPage = () => {
                     ) :
                         <>
                             <BannerSection />
-                            <PartnerCardList data={merchants} title="Mitra Ekslusif" />
+                            <PartnerCardList data={dummyData} title="Mitra Ekslusif" />
                             <PartnerCardList data={merchants} isWrap title="Mitra Peluang.co" subTitle="Mitra terbaik yang sudah kami verifikasi." />
                             <BannerSection />
                         </>

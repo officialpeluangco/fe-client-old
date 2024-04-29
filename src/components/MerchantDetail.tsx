@@ -87,10 +87,12 @@ const MerchantDetail = () => {
 
             <div className="md:w-1/2 w-full h-full flex flex-col justify-between gap-4 md:gap-0">
                 <div className="w-full h-fit flex flex-row gap-4">
-                    <div className="w-fit h-fit shadow-[0_0_10px_4px_rgba(0,0,0,0.1)] rounded-full object-cover">
-                        <img className="rounded-full" src={load.imgUrl} width={75} height={75} alt="" />
+                    <div className="w-fit h-fit shadow-[0_0_10px_4px_rgba(0,0,0,0.1)] rounded-full  ">
+                        <div className="w-[60px] h-[60px] object-cover overflow-hidden flex items-center justify-center">
+                            <img className="rounded-full" src={load.imgUrl} width={60} height={60} alt={load.title} />
+                        </div>
                     </div>
-                    <div className="flex flex-col w-full h-full justify-center">
+                    <div className="flex flex-col w-fit h-full justify-center">
                         <h1 className="text-3xl font-semibold">
                             {load.title}
                         </h1>
@@ -127,7 +129,7 @@ const MerchantDetail = () => {
                         <div className="flex flex-row">
                             <div className="h-full w-1/3">
                                 <h3 className="font-semibold text-sm">
-                                    6 Cabang
+                                    N/A Cabang
                                 </h3>
                                 <div className="text-sm text-gray-500">
                                     Seluruh Indonesia
