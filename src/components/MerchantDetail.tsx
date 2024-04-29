@@ -1,4 +1,3 @@
-import { PartnerCardProps } from "@/types/partner"
 import { useLoaderData } from "react-router-dom"
 import merchant1 from '@/assets/images/merchant/Images Utama.png'
 
@@ -19,7 +18,8 @@ import 'swiper/css/thumbs';
 const MerchantDetail = () => {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const [activeThumb, setActiveThumb] = useState<any>(null);
-    const load: PartnerCardProps = useLoaderData() as PartnerCardProps;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const load: any = useLoaderData();
 
     return (
         <section className='w-full md:h-[660px] h-full py-[30px] flex md:flex-row flex-col items-center justify-start gap-[60px] max-w-[1320px] mx-auto md:px-0 px-4'>

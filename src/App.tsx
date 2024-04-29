@@ -1,10 +1,11 @@
 import { Outlet, Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from "react-router-dom"
 import HomePage from "./routes/HomePage"
-import { PartnerCardProps, dummyData } from "./types/partner"
 import MerchantPage from "./routes/MerchantPage"
 import MerchantDetail from "./components/MerchantDetail"
 import ErrorPage from "./components/ErrorPage"
 import ScrollToTop from "./lib/scrollToTop"
+import { Merchant } from "./lib/features/merchant/merchantSlice"
+import merchantJSON from "@/assets/merchants.json"
 
 const AppLayout = () => {
     return (
@@ -23,8 +24,8 @@ const router = createBrowserRouter(
                 <Route path="/merchant" element={<MerchantPage />} errorElement={<ErrorPage />} >
                     <Route
                         path=":id"
-                        loader={({ params }): PartnerCardProps => {
-                            const data = dummyData.filter((data) => data.id === Number(params.id))
+                        loader={({ params }): Merchant => {
+                            const data = merchantJSON.filter((item: Merchant) => item.id === parseInt(params.id || ""))
                             return data[0]
                         }}
                         element={<MerchantDetail />}

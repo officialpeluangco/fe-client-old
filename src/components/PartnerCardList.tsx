@@ -1,14 +1,13 @@
 import React from 'react'
 import PartnerCard from './PartnerCard'
-import { PartnerCardProps } from '@/types/partner'
 import { Carousel, CarouselContent, CarouselItem } from './ui/carousel'
+import { Merchant } from '@/lib/features/merchant/merchantSlice'
 
 interface PartnerCardListProps {
     title?: string
     subTitle?: string
     isWrap?: boolean
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    data: PartnerCardProps[]
+    data: Merchant[]
 }
 
 const PartnerCardList: React.FC<PartnerCardListProps> = ({
@@ -17,6 +16,7 @@ const PartnerCardList: React.FC<PartnerCardListProps> = ({
     subTitle = '',
     isWrap = false
 }) => {
+
     return (
         <section className='mx-auto w-full flex flex-col h-fit my-5 max-w-[1320px] gap-2 md:px-0 px-4'>
             <div className='text-3xl font-inter font-bold'>

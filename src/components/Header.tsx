@@ -36,11 +36,11 @@ const Header: React.FC<HeaderProps> = ({ white }) => {
                 <li className={`font-inter cursor-pointer hover:border-black ${scrollPosition > 0 || white === false ? 'md:hover:border-black' : 'md:hover:border-white'}  border-2 border-transparent transition-all py-[5px] px-6 rounded-lg`}>
                     Jadi Mitra Peluang.co
                 </li>
-                <li className={`font-inter cursor-pointer hover:border-black ${scrollPosition > 0 || white === false ? 'hover:border-black' : 'md:hover:border-white'}  border-2 border-transparent transition-all py-[5px] px-6 rounded-lg`}>
-                    <Link to='/merchant'>
+                <Link to='/merchant'>
+                    <li className={`font-inter cursor-pointer hover:border-black ${scrollPosition > 0 || white === false ? 'hover:border-black' : 'md:hover:border-white'}  border-2 border-transparent transition-all py-[5px] px-6 rounded-lg`}>
                         Merchant
-                    </Link>
-                </li>
+                    </li>
+                </Link>
                 <li className={`font-inter cursor-pointer hover:border-black ${scrollPosition > 0 || white === false ? 'hover:border-black' : 'md:hover:border-white'}  border-2 border-transparent transition-all py-[5px] px-6 rounded-lg`}>
                     Masuk
                 </li>
