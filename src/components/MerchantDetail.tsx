@@ -1,7 +1,6 @@
 import { useLoaderData } from "react-router-dom"
-import merchant1 from '@/assets/images/merchant/Images Utama.png'
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Thumbs } from 'swiper/modules';
 import { CircleDot } from "lucide-react";
@@ -14,16 +13,22 @@ import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/navigation';
 import 'swiper/css/thumbs';
+import { PartnerCardPropsExtended } from "@/types/partner";
+import { AspectRatio } from "./ui/aspect-ratio";
 
 const MerchantDetail = () => {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const [activeThumb, setActiveThumb] = useState<any>(null);
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const load: any = useLoaderData();
+    const load: PartnerCardPropsExtended = useLoaderData() as PartnerCardPropsExtended;
+    const [images, setImages] = useState<string[]>(load.images);
+
+    useEffect(() => {
+        setImages(load.images)
+    },[load])
 
     return (
         <section className='w-full md:h-[660px] h-full py-[30px] flex md:flex-row flex-col items-center justify-start gap-[60px] max-w-[1320px] mx-auto md:px-0 px-4'>
-            <div className="md:w-1/2 h-full w-full flex flex-col justify-center">
+            <div className="md:w-1/2 h-full w-full flex flex-col gap-4 justify-center">
                 <Swiper
 
                     modules={[Navigation, Thumbs]}
@@ -38,23 +43,18 @@ const MerchantDetail = () => {
                         swiper:
                             activeThumb && !activeThumb.destroyed ? activeThumb : null,
                     }}
-                    className="mySwiper2 mb-4 rounded-lg"
+                    className="mySwiper2 rounded-lg"
                 >
-                    <SwiperSlide>
-                        <img src={merchant1} alt="" />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img src={merchant1} alt="" />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img src={merchant1} alt="" />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img src={merchant1} alt="" />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img src={merchant1} alt="" />
-                    </SwiperSlide>
+
+                    {
+                        images.length && images.map((img, index) => (
+                            <SwiperSlide key={index}>
+                                <AspectRatio ratio={5 / 4}>
+                                    <img src={img} className="rounded-lg" alt="" />
+                                </AspectRatio>
+                            </SwiperSlide>
+                        ))
+                    }
                 </Swiper>
 
                 <Swiper
@@ -64,23 +64,18 @@ const MerchantDetail = () => {
                     spaceBetween={10}
                     slidesPerView={5}
                     modules={[Navigation, Thumbs]}
-                    className="mySwiper"
+                    className="mySwiper "
                 >
-                    <SwiperSlide>
-                        <img src={merchant1} className="rounded-lg" alt="" />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img src={merchant1} className="rounded-lg" alt="" />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img src={merchant1} className="rounded-lg" alt="" />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img src={merchant1} className="rounded-lg" alt="" />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img src={merchant1} className="rounded-lg" alt="" />
-                    </SwiperSlide>
+
+                    {
+                        images.length && images.map((img, index) => (
+                            <SwiperSlide key={index}>
+                                <AspectRatio ratio={13 / 12}>
+                                    <img src={img} className="rounded-lg" alt="" />
+                                </AspectRatio>
+                            </SwiperSlide>
+                        ))
+                    }
 
                 </Swiper>
             </div>

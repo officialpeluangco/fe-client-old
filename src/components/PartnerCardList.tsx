@@ -1,13 +1,13 @@
 import React from 'react'
 import PartnerCard from './PartnerCard'
 import { Carousel, CarouselContent, CarouselItem } from './ui/carousel'
-import { Merchant } from '@/lib/features/merchant/merchantSlice'
+import { PartnerCardProps } from '@/types/partner'
 
 interface PartnerCardListProps {
     title?: string
     subTitle?: string
     isWrap?: boolean
-    data: Merchant[]
+    data: PartnerCardProps[]
 }
 
 const PartnerCardList: React.FC<PartnerCardListProps> = ({

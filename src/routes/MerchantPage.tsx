@@ -4,9 +4,7 @@ import SearchBar, { SearchFilterProps } from "@/components/SearchBar"
 import Header from "@/components/Header"
 import { Outlet, useParams } from "react-router-dom"
 import Footer from "@/components/Footer"
-import { useSelector } from "react-redux"
-import { RootState } from "@/lib/store"
-import { dummyData } from "@/types/partner"
+import { dummyData, dummyLongData } from "@/types/partner"
 
 const filterProps: SearchFilterProps[] = [
     {
@@ -32,8 +30,6 @@ const filterProps: SearchFilterProps[] = [
 
 const MerchantPage = () => {
     const param = useParams()
-    console.log(param)
-    const merchants = useSelector((state: RootState) => state.merchant.merchants)
 
     return (
         <>
@@ -46,13 +42,13 @@ const MerchantPage = () => {
                     Object.keys(param).length != 0 ? (
                         <>
                             <Outlet />
-                            <PartnerCardList data={merchants} title="Mitra Lainnya" />
+                            <PartnerCardList data={dummyLongData} title="Mitra Lainnya" />
                         </>
                     ) :
                         <>
                             <BannerSection />
                             <PartnerCardList data={dummyData} title="Mitra Ekslusif" />
-                            <PartnerCardList data={merchants} isWrap title="Mitra Peluang.co" subTitle="Mitra terbaik yang sudah kami verifikasi." />
+                            <PartnerCardList data={dummyLongData} isWrap title="Mitra Peluang.co" subTitle="Mitra terbaik yang sudah kami verifikasi." />
                             <BannerSection />
                         </>
                 }
