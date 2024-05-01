@@ -3,6 +3,7 @@ import { Separator } from './ui/separator'
 import icon1 from '../assets/images/icon/icon1.png'
 import icon2 from '../assets/images/icon/icon2.png'
 import icon3 from '../assets/images/icon/icon3.png'
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import icon4 from '../assets/images/icon/icon4.png'
 
 import icon5 from '../assets/images/icon/icons8-facebook.png'
@@ -17,48 +18,54 @@ const Footer = () => {
             <div className='w-full h-full mx-auto max-w-[1320px] '>
                 <Separator className='my-[70px] h-[1px]' />
                 <div className='w-full h-fit flex md:flex-row flex-col md:gap-0 gap-8'>
-                    <div className='h-full md:w-1/4 bg-white flex flex-col gap-[20px]'>
-                        <h2 className='font-semibold text-gray-500'>
-                            Layanan Kami
-                        </h2>
-                        <div className='text-gray-400 cursor-pointer hover:text-gray-400/50 w-fit text-sm font-extralight'>
-                            Mitra Kami
-                        </div>
-                        <div className='text-gray-400 cursor-pointer hover:text-gray-400/50 w-fit text-sm font-extralight'>
-                            Mendaftar Menjadi Mitra
-                        </div>
-                        <div className='text-gray-400 cursor-pointer hover:text-gray-400/50 w-fit text-sm font-extralight'>
-                            Tentang Kami
-                        </div>
-                        <div className='text-gray-400 cursor-pointer hover:text-gray-400/50 w-fit text-sm font-extralight'>
-                            Blog
-                        </div>
-                    </div>
-                    <div className='h-full md:w-1/4 bg-white flex flex-col gap-[20px]'>
-                        <h2 className='font-semibold text-gray-500'>
-                            Hubungi Kami
-                        </h2>
-                        <div className='text-gray-400 cursor-pointer hover:text-gray-400/50 w-fit text-sm font-extralight'>
-                            Plaza Sumarecon Bekasi
-                        </div>
-                        <div className='text-gray-400 cursor-pointer hover:text-gray-400/50 w-fit text-sm font-extralight'>
-                            official.peluang@gmail.com
-                        </div>
-                        <div className='text-gray-400 cursor-pointer hover:text-gray-400/50 w-fit text-sm font-extralight'>
-                            +62 851-7999-8975
+                    <div className='h-full md:w-1/4 bg-white flex justify-start'>
+                        <div className='flex flex-col gap-[20px] w-fit'>
+                            <h2 className='font-semibold text-gray-500'>
+                                Layanan Kami
+                            </h2>
+                            <div className='text-gray-400 cursor-pointer hover:text-gray-400/50 w-fit text-sm font-extralight'>
+                                Mitra Kami
+                            </div>
+                            <div className='text-gray-400 cursor-pointer hover:text-gray-400/50 w-fit text-sm font-extralight'>
+                                Mendaftar Menjadi Mitra
+                            </div>
+                            <div className='text-gray-400 cursor-pointer hover:text-gray-400/50 w-fit text-sm font-extralight'>
+                                Tentang Kami
+                            </div>
+                            <div className='text-gray-400 cursor-pointer hover:text-gray-400/50 w-fit text-sm font-extralight'>
+                                Blog
+                            </div>
                         </div>
                     </div>
-                    <div className='h-full md:w-1/4 bg-white flex flex-col gap-[20px]'>
-                        <h2 className='font-semibold text-gray-500'>
-                            Kolaborasi
-                        </h2>
-                        <div className='flex flex-row gap-4'>
-                            <img src={icon1} alt="" />
-                            <img src={icon2} alt="" />
-                            <img src={icon3} alt="" />
+                    <div className='h-full md:w-1/4 bg-white flex justify-start'>
+                        <div className='flex flex-col gap-[20px] w-fit'>
+                            <h2 className='font-semibold text-gray-500'>
+                                Hubungi Kami
+                            </h2>
+                            <div className='text-gray-400 cursor-pointer hover:text-gray-400/50 w-fit text-sm font-extralight'>
+                                Plaza Sumarecon Bekasi
+                            </div>
+                            <div className='text-gray-400 cursor-pointer hover:text-gray-400/50 w-fit text-sm font-extralight'>
+                                official.peluang@gmail.com
+                            </div>
+                            <div className='text-gray-400 cursor-pointer hover:text-gray-400/50 w-fit text-sm font-extralight'>
+                                +62 851-7999-8975
+                            </div>
                         </div>
                     </div>
-                    <div className='h-full md:w-1/4 bg-white flex flex-col gap-[20px]'>
+                    <div className='h-full md:w-1/4 bg-white flex justify-start'>
+                        <div className='flex flex-col gap-[20px] w-fit'>
+                            <h2 className='font-semibold text-gray-500'>
+                                Kolaborasi
+                            </h2>
+                            <div className='flex flex-row gap-4'>
+                                <img src={icon1} alt="" />
+                                <img src={icon2} alt="" />
+                                <img src={icon3} alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    {/* <div className='h-full md:w-1/4 bg-white flex flex-col gap-[20px]'>
                         <h2 className='font-semibold text-gray-500'>
                             Layanan Kami
                         </h2>
@@ -66,7 +73,7 @@ const Footer = () => {
                             <img src={icon4} alt="" />
                         </div>
 
-                    </div>
+                    </div> */}
                 </div>
                 <Separator className='my-[40px] h-[1px]' />
                 <div className='w-full h-fit flex md:flex-row flex-col md:justify-between md:gap-0 gap-4 items-center'>

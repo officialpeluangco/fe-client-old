@@ -20,7 +20,6 @@ const PartnerCard: React.FC<props> = ({
                             className='w-[200px] md:h-[174px] h-[134px] object-cover rounded-lg group-hover:scale-110 delay-100 transition-all'
                             src={data.imgUrl}
                             alt=""
-                            loading="lazy"
                         />
                     </div>
                 </AspectRatio>

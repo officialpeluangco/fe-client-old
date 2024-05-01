@@ -15,16 +15,19 @@ import 'swiper/css/navigation';
 import 'swiper/css/thumbs';
 import { PartnerCardPropsExtended } from "@/types/partner";
 import { AspectRatio } from "./ui/aspect-ratio";
+import { Skeleton } from "./ui/skeleton";
 
 const MerchantDetail = () => {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const [activeThumb, setActiveThumb] = useState<any>(null);
     const load: PartnerCardPropsExtended = useLoaderData() as PartnerCardPropsExtended;
-    const [images, setImages] = useState<string[]>(load.images);
+    const [images, setImages] = useState<string[]>([]);
+    const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
-        setImages(load.images)
-    },[load])
+        setImages(load.images);
+        setIsLoading(true);
+    }, [load.images]);
 
     return (
         <section className='w-full md:h-[660px] h-full py-[30px] flex md:flex-row flex-col items-center justify-start gap-[60px] max-w-[1320px] mx-auto md:px-0 px-4'>
@@ -49,8 +52,9 @@ const MerchantDetail = () => {
                     {
                         images.length && images.map((img, index) => (
                             <SwiperSlide key={index}>
-                                <AspectRatio ratio={5 / 4}>
-                                    <img src={img} className="rounded-lg" alt="" />
+                                <Skeleton className={`${!isLoading && "hidden"} w-full h-full rounded-lg`} />
+                                <AspectRatio ratio={5 / 4} className={`${isLoading && "hidden"}`}>
+                                    <img src={img} onLoad={() => setIsLoading(false)} className="rounded-lg" alt="" />
                                 </AspectRatio>
                             </SwiperSlide>
                         ))
@@ -70,8 +74,9 @@ const MerchantDetail = () => {
                     {
                         images.length && images.map((img, index) => (
                             <SwiperSlide key={index}>
-                                <AspectRatio ratio={13 / 12}>
-                                    <img src={img} className="rounded-lg" alt="" />
+                                <Skeleton className={`${!isLoading && "hidden"} w-full h-full rounded-lg`} />
+                                <AspectRatio ratio={13 / 12} className={`${isLoading && "hidden"}`}>
+                                    <img src={img} onLoad={() => setIsLoading(false)}  className="rounded-lg" alt="" />
                                 </AspectRatio>
                             </SwiperSlide>
                         ))
