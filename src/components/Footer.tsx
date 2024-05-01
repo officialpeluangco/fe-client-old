@@ -3,8 +3,6 @@ import { Separator } from './ui/separator'
 import icon1 from '../assets/images/icon/icon1.png'
 import icon2 from '../assets/images/icon/icon2.png'
 import icon3 from '../assets/images/icon/icon3.png'
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import icon4 from '../assets/images/icon/icon4.png'
 
 import icon5 from '../assets/images/icon/icons8-facebook.png'
 import icon6 from '../assets/images/icon/icons8-instagram.png'
