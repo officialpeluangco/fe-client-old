@@ -19,11 +19,11 @@ const PartnerCard: React.FC<props> = ({
                         <img
                             className='w-[200px] md:h-[174px] h-[134px] object-cover rounded-lg group-hover:scale-110 delay-100 transition-all'
                             src={data.imgUrl}
-                            alt=""
+                            alt={data.title}
                         />
                     </div>
                 </AspectRatio>
-                <span className="font-inter text-sm font-semibold">
+                <span className="font-inter md:text-sm text-xs font-semibold">
                     {data.title}
                 </span>
                 <div className="font-inter text-[8px] py-1 px-3 text-gray-500 rounded-md w-fit bg-slate-50">

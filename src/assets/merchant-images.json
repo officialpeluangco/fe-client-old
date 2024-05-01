@@ -139,7 +139,9 @@
   "desc": "Dalam beberapa tahun terakhir, barbershop sudah menjadi tujuan utama bagi para pria untuk melakukan perawatan rutin pribadi. Kesadaran para pria untuk menjaga penampilan, salah satunya dengan merapikan potongan rambut menjadikan barbershop satu-satunya tempat pria bisa memenuhi berbagai kebutuhan perawatannya.",
   "BEP": "N/A",
   "price": 240000000,
-  "images": "https://placehold.co/600x600.png"
+  "images": [
+    "https://placehold.co/600x600.png"
+  ]
  },
  {
   "id": 11,
@@ -209,7 +211,9 @@
   "desc": "Kamu bingung mau mulai bisnis di bidang apa? Lagi cari bisnis yang nggak ada matinya? Jangan bingung, yuk mulai usaha dan bisnismu sendiri bersama Mie Ayam Bengkel",
   "BEP": "N/A",
   "price": 35000000,
-  "images": "https://placehold.co/600x600.png"
+  "images": [
+    "https://placehold.co/600x600.png"
+  ]
  },
  {
   "id": 16,
@@ -219,7 +223,9 @@
   "desc": "N/A",
   "BEP": "N/A",
   "price": 65000000,
-  "images": "https://placehold.co/600x600.png"
+  "images": [
+    "https://placehold.co/600x600.png"
+  ]
  },
  {
   "id": 17,
@@ -229,7 +235,9 @@
   "desc": "N/A",
   "BEP": "N/A",
   "price": 100000000,
-  "images": "https://placehold.co/600x600.png"
+  "images": [
+    "https://placehold.co/600x600.png"
+  ]
  },
  {
   "id": 18,

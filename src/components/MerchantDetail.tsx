@@ -30,8 +30,8 @@ const MerchantDetail = () => {
     }, [load.images]);
 
     return (
-        <section className='w-full md:h-[660px] h-full py-[30px] flex md:flex-row flex-col items-center justify-start gap-[60px] max-w-[1320px] mx-auto md:px-0 px-4'>
-            <div className="md:w-1/2 h-full w-full flex flex-col gap-4 justify-center">
+        <section className='w-full h-full py-[30px] flex md:flex-row flex-col items-start md:gap-[60px] gap-4 max-w-[1320px] mx-auto md:px-0 px-4'>
+            <div className="md:w-1/2 md:h-[100vh] h-[60vh] w-full flex flex-col gap-2 justify-center">
                 <Swiper
 
                     modules={[Navigation, Thumbs]}
@@ -52,9 +52,9 @@ const MerchantDetail = () => {
                     {
                         images.length && images.map((img, index) => (
                             <SwiperSlide key={index}>
-                                <Skeleton className={`${!isLoading && "hidden"} w-full h-full rounded-lg`} />
-                                <AspectRatio ratio={5 / 4} className={`${isLoading && "hidden"}`}>
-                                    <img src={img} onLoad={() => setIsLoading(false)} className="rounded-lg" alt="" />
+                                <Skeleton className={`w-full h-full rounded-lg ${!isLoading && "hidden"}`} />
+                                <AspectRatio ratio={13 / 12} className={`${isLoading && "hidden"}`}>
+                                    <img src={img} onLoad={() => setIsLoading(false)} className="rounded-lg" alt={load.title} />
                                 </AspectRatio>
                             </SwiperSlide>
                         ))
@@ -74,9 +74,9 @@ const MerchantDetail = () => {
                     {
                         images.length && images.map((img, index) => (
                             <SwiperSlide key={index}>
-                                <Skeleton className={`${!isLoading && "hidden"} w-full h-full rounded-lg`} />
+                                <Skeleton className={`w-full h-full md:max-h-[120px] max-h-[60px] rounded-lg ${!isLoading && "hidden"}`} />
                                 <AspectRatio ratio={13 / 12} className={`${isLoading && "hidden"}`}>
-                                    <img src={img} onLoad={() => setIsLoading(false)}  className="rounded-lg" alt="" />
+                                    <img src={img} onLoad={() => setIsLoading(false)} className="rounded-lg" alt={load.title} />
                                 </AspectRatio>
                             </SwiperSlide>
                         ))
@@ -85,7 +85,7 @@ const MerchantDetail = () => {
                 </Swiper>
             </div>
 
-            <div className="md:w-1/2 w-full h-full flex flex-col justify-between gap-4 md:gap-0">
+            <div className="h-full md:w-1/2 w-full flex flex-col justify-between gap-4 md:gap-8">
                 <div className="w-full h-fit flex flex-row gap-4">
                     <div className="w-fit h-fit shadow-[0_0_10px_4px_rgba(0,0,0,0.1)] rounded-full  ">
                         <div className="w-[60px] h-[60px] object-cover overflow-hidden flex items-center justify-center">
@@ -171,7 +171,6 @@ const MerchantDetail = () => {
                         </button>
                     </div>
                 </div>
-
             </div>
         </section>
     )

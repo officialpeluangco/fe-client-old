@@ -98,7 +98,7 @@ export const dummyLongData: PartnerCardProps[] = [
      id: 4,
      imgUrl: "https://peluang-images.s3.ap-southeast-1.amazonaws.com/Autoclean/autoclean+logo.png",
      title: "Autoclean Waterless",
-     category: "Automotive (Car Wash, Coating, etc)",
+     category: "Automotive",
      desc: "Jasa cuci dan perawatan kendaraan Hemat Air yang hanya memerlukan 325ml cairan yang aman. Sudah menerima beberapa penghargaan sejak tahun 2017 dan pengembangan produk baru \"Waterless Foam' pertama di Indonesia.",
      BEP: "N/A",
      price: 98000000
