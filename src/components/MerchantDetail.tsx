@@ -31,7 +31,7 @@ const MerchantDetail = () => {
 
     return (
         <section className='w-full h-full py-[30px] flex md:flex-row flex-col items-start md:gap-[60px] gap-4 max-w-[1320px] mx-auto md:px-0 px-4'>
-            <div className="md:w-1/2 md:h-[100vh] h-[60vh] w-full flex flex-col gap-2 justify-center">
+            <div className="md:w-1/2 md:h-full h-full overflow-hidden w-full flex flex-col gap-2 justify-center relative">
                 <Swiper
 
                     modules={[Navigation, Thumbs]}
@@ -52,7 +52,7 @@ const MerchantDetail = () => {
                     {
                         images.length && images.map((img, index) => (
                             <SwiperSlide key={index}>
-                                <Skeleton className={`w-full h-full rounded-lg ${!isLoading && "hidden"}`} />
+                                <Skeleton className={`w-full md:h-[600px] h-[300px] absolute max-h-[300px] md:max-h-[600px] overflow-hidden rounded-lg ${!isLoading && "hidden"}`} />
                                 <AspectRatio ratio={13 / 12} className={`${isLoading && "hidden"}`}>
                                     <img src={img} onLoad={() => setIsLoading(false)} className="rounded-lg" alt={load.title} />
                                 </AspectRatio>
@@ -74,7 +74,7 @@ const MerchantDetail = () => {
                     {
                         images.length && images.map((img, index) => (
                             <SwiperSlide key={index}>
-                                <Skeleton className={`w-full h-full md:max-h-[120px] max-h-[60px] rounded-lg ${!isLoading && "hidden"}`} />
+                                <Skeleton className={`w-full md:h-[120px] h-[60px] md:max-h-[120px] max-h-[60px] rounded-lg absolute ${!isLoading && "hidden"}`} />
                                 <AspectRatio ratio={13 / 12} className={`${isLoading && "hidden"}`}>
                                     <img src={img} onLoad={() => setIsLoading(false)} className="rounded-lg" alt={load.title} />
                                 </AspectRatio>
