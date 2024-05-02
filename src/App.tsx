@@ -4,7 +4,7 @@ import MerchantPage from "./routes/MerchantPage"
 import MerchantDetail from "./components/MerchantDetail"
 import ErrorPage from "./components/ErrorPage"
 import ScrollToTop from "./lib/scrollToTop"
-import merchantImages from "@/assets/merchant-images.json"
+import merchantImages from "@/assets/merchants.json"
 
 const AppLayout = () => {
     return (

@@ -31,7 +31,7 @@ const MerchantDetail = () => {
 
     return (
         <section className='w-full h-full py-[30px] flex md:flex-row flex-col items-start md:gap-[60px] gap-4 max-w-[1320px] mx-auto md:px-0 px-4'>
-            <div className="md:w-1/2 md:h-full h-full overflow-hidden w-full flex flex-col gap-2 justify-center relative">
+            <div className="md:w-[40%] md:h-full h-full overflow-hidden w-full flex flex-col gap-2 justify-center relative">
                 <Swiper
 
                     modules={[Navigation, Thumbs]}
@@ -85,7 +85,7 @@ const MerchantDetail = () => {
                 </Swiper>
             </div>
 
-            <div className="h-full md:w-1/2 w-full flex flex-col justify-between gap-4 md:gap-8">
+            <div className="h-full md:w-[60%] w-full flex flex-col justify-between gap-4 md:gap-8">
                 <div className="w-full h-fit flex flex-row gap-4">
                     <div className="w-fit h-fit shadow-[0_0_10px_4px_rgba(0,0,0,0.1)] rounded-full  ">
                         <div className="w-[60px] h-[60px] object-cover overflow-hidden flex items-center justify-center">
