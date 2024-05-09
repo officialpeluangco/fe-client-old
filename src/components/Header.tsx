@@ -4,6 +4,8 @@ import { useScrollPosition } from '@/hooks/useScrollPosition'
 import { Link } from 'react-router-dom'
 import { Menu, X } from 'lucide-react'
 import { useState } from 'react'
+import LoginPopUp from './auth/LoginPopUp'
+
 
 interface HeaderProps {
     white?: boolean
@@ -21,7 +23,7 @@ const Header: React.FC<HeaderProps> = ({ white }) => {
         <header
             className={`
                 w-full md:h-[80px] h-[60px] flex justify-center px-0 fixed top-0 transition-all z-50
-                ${scrollPosition > 0 ? `md:text-black bg-white shadow-md` : `md:text-white bg-transparent shadow-none`}` 
+                ${scrollPosition > 0 ? `md:text-black bg-white shadow-md` : `md:text-white bg-transparent shadow-none`}`
             }>
             <div className={`
                 max-w-[1320px] w-full flex flex-row justify-between items-center`
@@ -45,9 +47,9 @@ const Header: React.FC<HeaderProps> = ({ white }) => {
                             Merchant
                         </li>
                     </Link>
-                    <li className={`font-inter cursor-pointer hover:border-black ${scrollPosition > 0 || white === false ? 'hover:border-black' : 'md:hover:border-white'}  border-2 border-transparent transition-all py-[5px] px-4 rounded-lg`}>
-                        Masuk
-                    </li>
+
+                    <LoginPopUp scrollPosition={scrollPosition} white={white} />
+
                     <li className='text-white font-inter cursor-pointer border-2 border-transparent hover:bg-[#a5408c] bg-[#771444] py-[5px] px-4 rounded-lg transition-all md:ml-4'>
                         Daftar
                     </li>

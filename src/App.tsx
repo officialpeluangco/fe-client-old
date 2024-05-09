@@ -5,6 +5,7 @@ import MerchantDetail from "./components/MerchantDetail"
 import ErrorPage from "./components/ErrorPage"
 import ScrollToTop from "./lib/scrollToTop"
 import merchantImages from "@/assets/merchants.json"
+import RegisterPage from "./routes/RegisterPage"
 
 const AppLayout = () => {
     return (
@@ -32,6 +33,7 @@ const router = createBrowserRouter(
                         element={<MerchantDetail />}
                     />
                 </Route>
+                <Route path="/register" element={<RegisterPage />} />
             </Route>
         </>
     )
