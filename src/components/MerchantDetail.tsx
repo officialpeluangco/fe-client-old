@@ -1,4 +1,4 @@
-import { useLoaderData } from "react-router-dom"
+import { Link, useLoaderData } from "react-router-dom"
 
 import { useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -166,9 +166,11 @@ const MerchantDetail = () => {
                         </p>
                     </div>
                     <div>
-                        <button className='text-white text-sm md:text-base font-inter cursor-pointer border-2 border-transparent hover:bg-[#a5408c] bg-[#771444] md:py-[5px] md:px-6 py-[8px] px-4 rounded-lg transition-all ml-4'>
-                            Daftar
-                        </button>
+                        <Link to='/register'>
+                            <button className='text-white text-sm md:text-base font-inter cursor-pointer border-2 border-transparent hover:bg-[#a5408c] bg-[#771444] md:py-[5px] md:px-6 py-[8px] px-4 rounded-lg transition-all ml-4'>
+                                Daftar
+                            </button>
+                        </Link>
                     </div>
                 </div>
             </div>

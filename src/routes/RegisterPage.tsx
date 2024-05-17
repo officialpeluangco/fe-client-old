@@ -20,7 +20,9 @@ import LoginPopUp from '@/components/auth/LoginPopUp'
 
 const RegisterPage = () => {
   const formSchema = z.object({
-    username: z.string(),
+    username: z.string().min(1,{
+      message: "Cannot be empty"
+    }),
     phone: z.string().min(10, {
       message: "Phone number must be at least 10 characters",
     }),
