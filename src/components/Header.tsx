@@ -50,9 +50,11 @@ const Header: React.FC<HeaderProps> = ({ white }) => {
 
                     <LoginPopUp scrollPosition={scrollPosition} white={white} />
 
-                    <li className='text-white font-inter cursor-pointer border-2 border-transparent hover:bg-[#a5408c] bg-[#771444] py-[5px] px-4 rounded-lg transition-all md:ml-4'>
-                        Daftar
-                    </li>
+                    <Link to='/register'>
+                        <li className='text-white font-inter cursor-pointer border-2 border-transparent hover:bg-[#a5408c] bg-[#771444] py-[5px] px-4 rounded-lg transition-all md:ml-4'>
+                            Daftar
+                        </li>
+                    </Link>
                 </ul>
                 <button onClick={toggleMenu} className={`mr-4 md:hidden ${scrollPosition > 0 || white === false ? 'text-black' : 'text-white'}`}>
                     {isOpen ? <X /> : <Menu />}

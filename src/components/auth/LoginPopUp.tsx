@@ -25,10 +25,12 @@ import { Switch } from "../ui/switch"
 
 interface LoginPopUpProps {
     white?: boolean
-    scrollPosition: number
+    scrollPosition?: number
+    string?: string
+    underline?: boolean
 }
 
-const LoginPopUp: React.FC<LoginPopUpProps> = ({ scrollPosition, white }) => {
+const LoginPopUp: React.FC<LoginPopUpProps> = ({ scrollPosition, white, string = "Masuk", underline=false }) => {
     const formSchema = z.object({
         email: z.string().email(),
         password: z.string().min(6, {
@@ -53,9 +55,9 @@ const LoginPopUp: React.FC<LoginPopUpProps> = ({ scrollPosition, white }) => {
     return (
         <Dialog>
             <DialogTrigger>
-                <li className={`font-inter cursor-pointer hover:border-black ${scrollPosition > 0 || white === false ? 'hover:border-black' : 'md:hover:border-white'}  border-2 border-transparent transition-all py-[5px] px-4 rounded-lg`}>
-                    Masuk
-                </li>
+                <div className={`${underline ? 'py-[0px] px-0 hover:underline' : 'py-[5px] px-4'} font-inter cursor-pointer hover:border-black ${(scrollPosition || 0) > 0 || white === false ? 'hover:border-black' : 'md:hover:border-white'}  border-2 border-transparent transition-all rounded-lg`}>
+                    {string}
+                </div>
             </DialogTrigger>
             <DialogContent>
 
