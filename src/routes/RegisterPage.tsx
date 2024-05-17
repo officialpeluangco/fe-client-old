@@ -17,10 +17,11 @@ import { FaFacebook } from "react-icons/fa";
 import { Separator } from "@/components/ui/separator"
 import { Link } from 'react-router-dom'
 import LoginPopUp from '@/components/auth/LoginPopUp'
+import { BiSolidZap } from "react-icons/bi";
 
 const RegisterPage = () => {
   const formSchema = z.object({
-    username: z.string().min(1,{
+    username: z.string().min(1, {
       message: "Cannot be empty"
     }),
     phone: z.string().min(10, {
@@ -149,6 +150,14 @@ const RegisterPage = () => {
       </div>
       <div className="w-1/2 h-full">
         <div className='w-full h-screen'>
+          <div className='fixed bottom-[90px] right-[60px] w-fit h-fit flex flex-row bg-[#771444] justify-center items-center rounded-full py-3 px-3 pr-5 gap-2'>
+            <div className='bg-[#ad728f] rounded-full p-2'>
+              <BiSolidZap className='text-white text-[20px]' />
+            </div>
+            <span className='text-white font-thin'>
+              Capai Masa depan mu
+            </span>
+          </div>
           <img
             className='w-full h-full object-cover'
             src={registerBanner}
