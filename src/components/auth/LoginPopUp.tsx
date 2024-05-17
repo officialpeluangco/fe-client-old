@@ -22,6 +22,7 @@ import { FcGoogle } from "react-icons/fc";
 import { FaFacebook } from "react-icons/fa";
 import { Separator } from "../ui/separator"
 import { Switch } from "../ui/switch"
+import { Link } from "react-router-dom"
 
 interface LoginPopUpProps {
     white?: boolean
@@ -147,7 +148,7 @@ const LoginPopUp: React.FC<LoginPopUpProps> = ({ scrollPosition, white, string =
                     </Form>
 
                     <div className="text-xs">
-                        <span className="text-gray-500">Belum punya akun? </span><span className="text-[#A13670] hover:underline cursor-pointer">Buat akun yuk!</span>
+                        <span className="text-gray-500">Belum punya akun? </span><span className="text-[#A13670] hover:underline cursor-pointer"><Link to={'/register'}>Buat akun yuk!</Link></span>
                     </div>
 
                     <span className="text-gray-500 text-[10px]">
