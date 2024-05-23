@@ -14,7 +14,6 @@ const merchantSlice = createSlice({
     name: 'merchant',
     initialState,
     reducers: {
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         setMerchants: (state, action: PayloadAction<PartnerCardProps[]>) => {
             state.merchants = action.payload
         }

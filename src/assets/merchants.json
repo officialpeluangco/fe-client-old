@@ -59,19 +59,6 @@
         ]
     },
     {
-        "id": 5,
-        "imgUrl": "https://peluang-images.s3.ap-southeast-1.amazonaws.com/Cakwe+galaxy/logo+surabi.jpg",
-        "title": "Cakwe Galaxy",
-        "category": "Food & Beverages",
-        "desc": "Dengan Mengucap BISMILLAH dan Rasa Syukur yang Besar atas segala Rahmat dan Karunia ALLAH SUBHANAHU WATAALAA kami memulai bisnis kuliner pertama kali di tahun 2012 dengan berdagang Siomay dan mengembangkan bisnis kuliner, lalu menjelang akhir tahun 2012 dan awal 2013 bersama dengan team bahu membahu memulai usaha kuliner dengan menu utama Cakwe dengan brand CAKWE GALAXY dan buka di Pasar Ah poong sentul. Pada pertengan tahun 2013 sejalan dengan antusias yang tinggi dari penikmat cakwe di pasar ah poong kami buka satu gerai lagi di Grand Metropolitan Bekasi, CAKWE GALAXY : karena ukurannya super besar dan rasa yang super LEZAAAT dan juga dengan cocolan yang berbeda dari cakwe pada umumnya... Langsung menjadi jajanan Favorite bagi penikmat kuliner Nusantara !",
-        "BEP": "N/A",
-        "price": 45000000,
-        "images": [
-            "https://peluang-images.s3.ap-southeast-1.amazonaws.com/Cakwe+galaxy/Cakwe+FX.JPG",
-            "https://peluang-images.s3.ap-southeast-1.amazonaws.com/Cakwe+galaxy/WhatsApp+Image+2021-12-24+at+13.42.21.jpeg"
-        ]
-    },
-    {
         "id": 6,
         "imgUrl": "https://peluang-images.s3.ap-southeast-1.amazonaws.com/Sukayaki/sukayaki-logo(2)+(2).png",
         "title": "Sukayaki",

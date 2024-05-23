@@ -4,7 +4,6 @@ import { Link } from "react-router-dom"
 import { AspectRatio } from "./ui/aspect-ratio"
 
 interface props {
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     data: PartnerCardProps
 }
 
