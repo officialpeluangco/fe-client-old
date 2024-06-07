@@ -51,7 +51,7 @@ const PartnerCardList: React.FC<PartnerCardListProps> = ({
                                 slidesToScroll: 2
                             }
                         } className='w-full max-w-[1320px]'>
-                            <CarouselContent className='gap-6 mb-2'>
+                            <CarouselContent className='gap-2 md:gap-6 mb-2'>
                                 {data.map((item, index) => (
                                     <CarouselItem key={index} className='md:basis-1/4 basis-1/2 lg:basis-1/6'>
                                         <PartnerCard

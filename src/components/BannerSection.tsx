@@ -10,7 +10,7 @@ const BannerSection = () => {
 
     return (
         <div className="w-full">
-            <AspectRatio ratio={1190 / 250} className='w-full max-w-[1190px] flex justify-center items-center mx-auto'>
+            <AspectRatio ratio={1190 / 250} className='w-full max-w-[1190px] flex justify-center items-center mx-auto px-3 md:px-0 mt-4 md:mt-0'>
                 <div className='w-full h-full flex justify-center items-center'>
                     <Carousel>
                         <CarouselContent>
