@@ -147,7 +147,7 @@
     },
     {
         "id": 12,
-        "imgUrl": "https://peluang-images.s3.ap-southeast-1.amazonaws.com/BARBURGER/LOGO+BARBURGER+full+color.png",
+        "imgUrl": "https://peluang-images.s3.ap-southeast-1.amazonaws.com/BARBURGER/new-logo.png",
         "title": "Barburger",
         "category": "Food & Beverages",
         "desc": "Barburger is all about passion for burgers. The first open-kitchen-bar burger restaurant in Indonesia offer a varied selections of gourmet style burgers, halal hotdog,fried chicken, fresh and hygienic food.",
@@ -203,30 +203,6 @@
         ]
     },
     {
-        "id": 16,
-        "imgUrl": "https://placehold.co/500x400.png",
-        "title": "MIE AYAM + BAKSO BENGKEL",
-        "category": "Food & Beverages",
-        "desc": "N/A",
-        "BEP": "N/A",
-        "price": 65000000,
-        "images": [
-            "https://placehold.co/600x600.png"
-        ]
-    },
-    {
-        "id": 17,
-        "imgUrl": "https://placehold.co/500x400.png",
-        "title": "Ayam penyet cobek kaisar",
-        "category": "Food & Beverages",
-        "desc": "N/A",
-        "BEP": "N/A",
-        "price": 100000000,
-        "images": [
-            "https://placehold.co/600x600.png"
-        ]
-    },
-    {
         "id": 18,
         "imgUrl": "https://peluang-images.s3.ap-southeast-1.amazonaws.com/JALAKOTEKU/LOGO+UTAMA.png",
         "title": "Jalakoteku",
@@ -254,6 +230,43 @@
             "https://peluang-images.s3.ap-southeast-1.amazonaws.com/MISNOW/MS+EXPRESS+CIREBON+CSB+MALL+2.jpeg",
             "https://peluang-images.s3.ap-southeast-1.amazonaws.com/MISNOW/MS+Poster+Dessert+A3_2-06.jpg",
             "https://peluang-images.s3.ap-southeast-1.amazonaws.com/MISNOW/MS+Poster+Dessert+A3_3-01.jpg"
+        ]
+    },
+    {
+        "id": 20,
+        "imgUrl": "https://peluang-images.s3.ap-southeast-1.amazonaws.com/Chic+e_+Nin/61b0478b52e45.webp",
+        "title": "Chick e'Nin",
+        "category": "Food & Beverages",
+        "desc": "Chick e’Nin terinspirasi dari adanya pangsa pasar yang luas serta permintaan yang tinggi akan camilan berbahan dasar ayam. Sebagai salah satu pelopor franchise ayam crispy ala taiwan yang otentik dan khas dengan konsep kaki lima, Chick e’Nin telah memiliki lebih dari 90 outlet di seluruh Indonesia sejak outlet pertamanya hadir pada tahun 2016.",
+        "BEP": "N/A",
+        "price": 9000000,
+        "images": [
+            "https://peluang-images.s3.ap-southeast-1.amazonaws.com/Chic+e_+Nin/Dokumentasi+1.jpeg",
+            "https://peluang-images.s3.ap-southeast-1.amazonaws.com/Chic+e_+Nin/Dokumentasi+2.jpeg"
+        ]
+    },
+    {
+        "id": 16,
+        "imgUrl": "https://placehold.co/500x400.png",
+        "title": "MIE AYAM + BAKSO BENGKEL",
+        "category": "Food & Beverages",
+        "desc": "N/A",
+        "BEP": "N/A",
+        "price": 65000000,
+        "images": [
+            "https://placehold.co/600x600.png"
+        ]
+    },
+    {
+        "id": 17,
+        "imgUrl": "https://placehold.co/500x400.png",
+        "title": "Ayam penyet cobek kaisar",
+        "category": "Food & Beverages",
+        "desc": "N/A",
+        "BEP": "N/A",
+        "price": 100000000,
+        "images": [
+            "https://placehold.co/600x600.png"
         ]
     }
 ]
