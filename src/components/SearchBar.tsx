@@ -24,7 +24,7 @@ const defaultData: SearchFilterProps[] = [
 
 const SearchBar: React.FC<SearchBarProps> = ({ data = defaultData, long = false }) => {
     return (
-        <div className={`font-inter flex flex-row md:gap-4 md:bg-slate-200 bg-white md:border-none border-2 md:min-w-[750px] max-w-[1320px] w-full ${long ? 'md:w-full' : 'md:w-fit'} md:h-[60px] h-[45px] rounded-full md:p-[9px] mx-4 md:mx-0`}>
+        <div className={`font-inter flex flex-row md:gap-4 md:bg-slate-200 bg-white md:border-none border-2 md:min-w-[750px] max-w-[1190px] w-full ${long ? 'md:w-full' : 'md:w-fit'} md:h-[60px] h-[45px] rounded-full md:p-[9px] mx-4 md:mx-0`}>
             <input
                 type="text"
                 placeholder="Kebuli Abuya"

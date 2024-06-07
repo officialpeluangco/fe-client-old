@@ -211,22 +211,22 @@ export const dummyLongData: PartnerCardProps[] = [
         BEP: "N/A",
         price: 9000000
     },
-    // {
-    //     id: 16,
-    //     imgUrl: "https://placehold.co/500x400.png",
-    //     title: "MIE AYAM + BAKSO BENGKEL",
-    //     category: "Food & Beverages",
-    //     desc: "N/A",
-    //     BEP: "N/A",
-    //     price: 65000000
-    // },
-    // {
-    //     id: 17,
-    //     imgUrl: "https://placehold.co/500x400.png",
-    //     title: "Ayam penyet cobek kaisar",
-    //     category: "Food & Beverages",
-    //     desc: "N/A",
-    //     BEP: "N/A",
-    //     price: 100000000
-    // },
+    {
+        id: 16,
+        imgUrl: "https://placehold.co/500x400.png",
+        title: "MIE AYAM + BAKSO BENGKEL",
+        category: "Food & Beverages",
+        desc: "N/A",
+        BEP: "N/A",
+        price: 65000000
+    },
+    {
+        id: 17,
+        imgUrl: "https://placehold.co/500x400.png",
+        title: "Ayam penyet cobek kaisar",
+        category: "Food & Beverages",
+        desc: "N/A",
+        BEP: "N/A",
+        price: 100000000
+    },
 ]

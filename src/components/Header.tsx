@@ -26,7 +26,7 @@ const Header: React.FC<HeaderProps> = ({ white }) => {
                 ${scrollPosition > 0 ? `md:text-black bg-white shadow-md` : `md:text-white bg-transparent shadow-none`}`
             }>
             <div className={`
-                max-w-[1320px] w-full flex flex-row justify-between items-center`
+                max-w-[1190px] w-full flex flex-row justify-between items-center`
             }>
 
                 <Link to='/' className='pl-4 md:pl-0' >

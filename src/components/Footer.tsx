@@ -13,7 +13,7 @@ import logo2 from '../assets/images/Logo pink 2024 - Draft 1.png'
 const Footer = () => {
     return (
         <footer className='w-full h-[510px] my-6 md:px-0 px-4'>
-            <div className='w-full h-full mx-auto max-w-[1320px] '>
+            <div className='w-full h-full mx-auto max-w-[1190px] '>
                 <Separator className='my-[70px] h-[1px]' />
                 <div className='w-full h-fit flex md:flex-row flex-col md:gap-0 gap-8'>
                     <div className='h-full md:w-1/4 bg-white flex justify-start'>

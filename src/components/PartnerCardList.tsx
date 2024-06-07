@@ -18,7 +18,7 @@ const PartnerCardList: React.FC<PartnerCardListProps> = ({
 }) => {
 
     return (
-        <section className='mx-auto w-full flex flex-col h-fit my-5 max-w-[1320px] gap-2 md:px-0 px-4'>
+        <section className='mx-auto w-full flex flex-col h-fit my-5 max-w-[1190px] gap-2 md:px-0 px-4'>
             <div className='text-3xl font-inter font-bold'>
                 {title}
             </div>
@@ -30,7 +30,7 @@ const PartnerCardList: React.FC<PartnerCardListProps> = ({
 
             {
                 isWrap ?
-                    <div className='w-full flex flex-wrap justify-start items-center pt-2 pb-4 gap-6'>
+                    <div className='w-full flex flex-wrap justify-between items-center pt-2 pb-4 gap-y-6'>
                         {
                             data.map((item, index) => (
                                 <PartnerCard
@@ -39,16 +39,19 @@ const PartnerCardList: React.FC<PartnerCardListProps> = ({
                                 />
                             ))
                         }
+                        <div className='flex flex-col p-[13px] h-fit md:w-[200px] w-[160px] gap-2 cursor-pointer bg-white'>
+
+                        </div>
                     </div>
                     :
-                    <div className={`w-full flex flex-row justify-center items-center pt-2 pb-4 gap-6`}>
+                    <div className={`w-full flex flex-row justify-center items-center pt-2 pb-4 gap-4`}>
                         <Carousel opts={
                             {
                                 loop: true,
                                 slidesToScroll: 2
                             }
                         } className='w-full max-w-[1320px]'>
-                            <CarouselContent className=''>
+                            <CarouselContent className='gap-6 mb-2'>
                                 {data.map((item, index) => (
                                     <CarouselItem key={index} className='md:basis-1/4 basis-1/2 lg:basis-1/6'>
                                         <PartnerCard
