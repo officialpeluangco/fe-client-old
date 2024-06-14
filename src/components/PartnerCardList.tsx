@@ -1,6 +1,6 @@
 import React from 'react'
 import PartnerCard from './PartnerCard'
-import { Carousel, CarouselContent, CarouselItem } from './ui/carousel'
+// import { Carousel, CarouselContent, CarouselItem } from './ui/carousel'
 import { PartnerCardProps } from '@/types/partner'
 
 interface PartnerCardListProps {
@@ -44,8 +44,8 @@ const PartnerCardList: React.FC<PartnerCardListProps> = ({
                         </div>
                     </div>
                     :
-                    <div className={`w-full flex flex-row justify-center items-center pt-2 pb-4 gap-4`}>
-                        <Carousel opts={
+                    <div className={`w-full flex flex-row justify-between items-center pt-2 pb-4 gap-4`}>
+                        {/* <Carousel opts={
                             {
                                 loop: true,
                                 slidesToScroll: 2
@@ -61,7 +61,15 @@ const PartnerCardList: React.FC<PartnerCardListProps> = ({
                                     </CarouselItem>
                                 ))}
                             </CarouselContent>
-                        </Carousel>
+                        </Carousel> */}
+                        {
+                            data.map((item, index) => (
+                                <PartnerCard
+                                    key={index}
+                                    data={item}
+                                />
+                            ))
+                        }
                     </div>
             }
 

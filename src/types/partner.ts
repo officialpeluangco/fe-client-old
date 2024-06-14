@@ -55,6 +55,15 @@ export const dummyData: PartnerCardProps[] = [
         BEP: "N/A",
         price: 98000000
     },
+    {
+        id: 19,
+        imgUrl: "https://peluang-images.s3.ap-southeast-1.amazonaws.com/MISNOW/logo+msinow.png",
+        title: "Misnow",
+        category: "Food & Beverages",
+        desc: "Misnow Merupakan brand yang menyajikan Es Susu Salju dan Teh berbasis susu dengan mengusung konsep dessert yang berasal dari Korea. Misnow Menghadirkan produk Dessert yang unik & berkarakter dengan menggunakan bahan premium & berkualitas. Hadirnya Misnow memberikan masyarakat alternatif & sensasi yang baru dalam hidangan produk dessert yang bisa dinikmati seluruh kalangan masyarakat indonesia dengan harga terjangkau antara Rp 10.000 - Rp 25.000.",
+        BEP: "N/A",
+        price: 115000000
+    },
 ]
 
 export const dummyLongData: PartnerCardProps[] = [
