@@ -44,7 +44,7 @@ const PartnerCardList: React.FC<PartnerCardListProps> = ({
                         </div>
                     </div>
                     :
-                    <div className={`w-full flex flex-row justify-between items-center pt-2 pb-4 gap-4`}>
+                    <div className={`w-full flex flex-wrap justify-between items-center pt-2 pb-4 gap-4`}>
                         {/* <Carousel opts={
                             {
                                 loop: true,
